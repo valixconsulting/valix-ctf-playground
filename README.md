@@ -18,6 +18,7 @@ Nonetheless, feel free to contact **Valix Consulting** for your smart contract c
 | 6  | Bullied Boy  |
 | 7  | The Secret Source  |
 | 8  | Trick or Thieve  |
+| 9  | Lotto888 |
 | 10  | Alice in The Dark  |
 | 11  | Freeze The Flow  |
 
