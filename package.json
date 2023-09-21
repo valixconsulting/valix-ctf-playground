@@ -10,7 +10,8 @@
         "bullied-boy": "npx hardhat test test/bullied-boy/bullied-boy.challenge.ts",
         "the-secret-source": "npx hardhat test test/the-secret-source/the-secret-source.challenge.ts",
         "trick-or-thieve": "npx hardhat test test/trick-or-thieve/trick-or-thieve.challenge.ts",
-        "alice-in-the-dark": "npx hardhat test test/alice-in-the-dark/alice-in-the-dark.challenge.ts"
+        "alice-in-the-dark": "npx hardhat test test/alice-in-the-dark/alice-in-the-dark.challenge.ts",
+        "freeze-the-flow": "npx hardhat test test/freeze-the-flow/freeze-the-flow.challenge.ts"
     },
     "devDependencies": {
         "hardhat": "2.17.1",
