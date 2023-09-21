@@ -4,7 +4,7 @@ pragma solidity 0.8.19;
 import "./Vault.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract VaultHelper is Ownable{
+contract VaultHelper is Ownable {
 
     Vault public vault;
         
@@ -34,7 +34,7 @@ contract VaultHelper is Ownable{
         vault.withdraw(_user, _amount);
     }
 
-    function setVaultHelper(address _newVault) external onlyOwner{
+    function setVaultHelper(address _newVault) external onlyOwner {
         address prevVault = address(vault);
         vault = Vault(_newVault);
 

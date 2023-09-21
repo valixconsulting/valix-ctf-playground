@@ -3,7 +3,7 @@ pragma solidity 0.8.19;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract Vault is Ownable{
+contract Vault is Ownable {
     address public vaultHelpaer;
     mapping(address => uint256) private balance;
 
@@ -35,18 +35,18 @@ contract Vault is Ownable{
         emit Withdraw(_to, _amount);
     }
 
-    function setVaultHelper(address _newVaultHelper) external onlyOwner{
+    function setVaultHelper(address _newVaultHelper) external onlyOwner {
         address prevVaultHelper = address(vaultHelpaer);
         vaultHelpaer = _newVaultHelper;
 
         emit SetVaultHelper(prevVaultHelper, _newVaultHelper);
     }
 
-    function getUserBalance(address _user) public view returns(uint256){
+    function getUserBalance(address _user) public view returns(uint256) {
         return balance[_user];
     }
     
-    function getVaultBalance() public view returns(uint256){
+    function getVaultBalance() public view returns(uint256) {
         return address(this).balance;
     }
 }
