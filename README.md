@@ -18,6 +18,7 @@ Nonetheless, feel free to contact **Valix Consulting** for your smart contract c
 | 6  | Bullied Boy  |
 | 7  | The Secret Source  |
 | 8  | Trick or Thieve  |
+| 10  | Alice in The Dark  |
 
 # How to play
 1. Clone this repository
