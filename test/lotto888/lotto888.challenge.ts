@@ -47,7 +47,8 @@ describe("Challenge - Lotto888", function () {
         // Take money from the pool
         expect(await ethers.provider.getBalance(player.address)).to.greaterThan(PLAYER_INITIAL_ETH_BALANCE);
         
-        // Special Bonus - Drain until pool balance less than 1 ether
-        expect(await lotto888.balance()).to.lessThan(ONE_ETHER);
+        // Special Bonus!
+        // Uncomment the line below and drain the pool until the balance is less than 1 ether in a single transaction.
+        // expect(await lotto888.balance()).to.lessThan(ONE_ETHER);
     });
 });
