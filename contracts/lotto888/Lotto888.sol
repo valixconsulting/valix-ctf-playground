@@ -21,7 +21,7 @@ contract Lotto888 is Ownable {
         uint256 answer = oracle.getLuckyNumber(guess);
         if (guess == answer) {
             winner[msg.sender] = true;
-            payable(msg.sender).transfer(1 ether);
+            (bool whocares, ) = payable(msg.sender).call{value: 1 ether}("");
             emit BetPlaced(msg.sender, guess, answer, true);
         } else {
             emit BetPlaced(msg.sender, guess, answer, false);
