@@ -18,6 +18,8 @@ describe('Challenge - NFT Whitelist', function () {
         [deployer, player] = await ethers.getSigners();
         const [,, alice, bob] = await ethers.getSigners();
 
+        // Initialize balance of Player account for paying the gas
+        setBalance(player.address, ethers.utils.parseEther("0.1"));
         // Initialize balance of Bob account
         setBalance(bob.address, ethers.utils.parseEther("10.0"));
 
